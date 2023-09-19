@@ -1,0 +1,44 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.mainHeader {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: chocolate;
+  text-decoration: underline;
+
+}
+.small {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.book-item {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.bookShelf {
+  max-width: 100%;
+  height: auto;
+}

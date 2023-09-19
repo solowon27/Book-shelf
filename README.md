@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# BookShelf
+A book finder MERN app that allows users to search for books using the Google Books API and save them to a database. Users can also view books saved by other users and delete books from their saved list.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+* [Features](#features)
+* [Getting Started](#getting-started)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Technologies](#technologies)
+* [License](#license)
+* [Deployed Link](#deployed)
+* [Screenshot](#screenshot)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [Contact](#contact)
 
-## Available Scripts
+## Features
+* Search for books using the Google Books API
+* Save books to a database
+* View books saved by other users
+* Delete books from your saved list
 
-In the project directory, you can run:
+## Getting Started
+To get started, use the deployed link in the [Deployed Link](#deployed) section or clone the repository and run ```npm install``` to install the required dependencies.
+## Installation
+To install dependencies, run the following:
+```you can follow scripts in package.json file inside the root folder: bookshelf```
+```npm install```
 
-### `npm start`
+## Usage
+After downloading the files and installing the dependencies, run ```npm run develop``` to start the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
+* React
+* Node.js
+* Apollo Server
+* GraphQL
+* Express.js
+* MongoDB
+* Mongoose
+* Google Books API
+* Bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## License
+This repository is licensed under the MIT license.
+## Deployed
+https://bookshelf-2021.herokuapp.com/
 
-### `npm test`
+## Screenshot
+![All mutations](./client/Assets/screenshoots/graphql-all-mutations.jpg)
+![create-user](./client/Assets/screenshoots/graphql-createUser-mutation.jpg)
+![Home 1](./client/Assets/screenshoots/home1.jpg)
+![Home 2](./client/Assets/screenshoots/home2.jpg)
+![search results](./client/Assets/screenshoots/search-result.jpg)
+![saved books](./client/Assets/screenshoots/saved-books.jpg)
+![mobile view](./client/Assets/screenshoots/mobile-view.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
+## Contributing
+[![Contributors Badge](https://img.shields.io/github/contributors/solowon27/BookShelf?style=flat-square)](https://github.com/solowon27/BookShelf)
 
-### `npm run build`
+To contribute to BookShelf, clone this repo locally and commit your code on a separate branch.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Credits
+* [React](https://reactjs.org/)
+* [Node.js](https://nodejs.org/en/)
+* [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
+* [GraphQL](https://graphql.org/)
+* [Express.js](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [Google Books API](https://developers.google.com/books)
+* [Bootstrap](https://getbootstrap.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contact
+If you want to contact me you can reach me at[solowon27@hotmail.com] or [https://www.linkedin.com/in/solomon-tegegne-7b347027a/]. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
