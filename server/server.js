@@ -1,14 +1,13 @@
 const express = require('express');
 const path = require('path');
-const db = require('./config/connection');
+const mongoose = require('mongoose'); // Import mongoose here
 // const routes = require('./routes');
 
 const { ApolloServer } = require('apollo-server-express');
 const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
 
-require('dotenv').config();
-
+require('dotenv').config(); 
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -21,9 +20,18 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
-// });
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+  });
+  
+// Define  MongoDB URI
+const mongoURI = process.env.MONGODB_URI;
+
+// Connect to MongoDB
+mongoose.connect(mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
 
 const server = new ApolloServer({
   typeDefs,
@@ -40,10 +48,9 @@ const startApolloServer = async () => {
   server.applyMiddleware({ app });
 };
 
-startApolloServer(); 
-// app.use(routes);
+startApolloServer();
 
-db.once('open', () => {
+mongoose.connection.once('open', () => {
   app.listen(PORT, () => {
     console.log(`🌍 Now listening on http://localhost:${PORT}`);
     console.log(`🚀 GraphQL Playground available at http://localhost:${PORT}${server.graphqlPath}`);
